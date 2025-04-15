@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Jenifer Souza | Backend Developer</title>
+  <link rel="icon" href="public/chamaleon.svg" type="image/x-icon" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <style>
+    :root {
+      --bs-primary: #da4a2bff;
+    }
+
+    .btn-outline-primary {
+      border-color: var(--bs-primary);
+      color: var(--bs-primary);
+    }
+
+    .btn-outline-primary:hover,
+    .btn-outline-primary:focus,
+    .btn-outline-primary:active {
+      border-color: var(--bs-primary) !important;
+      background-color: var(--bs-primary) !important;
+      color: #e9e9e7 !important;
+    }
+
+    .h1 {
+      color: var(--bs-primary) !important;
+    }
+
+    body {
+      background-color: #1c1c1c;
+      color: #e9e9e7;
+      font-family: 'Cambria Math', 'Cambria', serif;
+      font-size: 1.2rem;
+    }
+
+    .badge-custom {
+      font-size: 1rem;
+      padding: 0.6rem 1rem;
+      margin: 0.2rem;
+    }
+
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-img-top {
+      object-fit: cover;
+      height: 200px;
+    }
+
+    .card-title {
+      font-weight: bolder;
+    }
+
+    .card-body {
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav id="navbar" class="navbar">
+    <div class="container">
+      <a class="navbar-brand d-none d-md-block" href="#">
+        <img src="public/chamaleonColor.svg" width="150" height="150" />
+      </a>
+
+      <button id="theme-button" class="btn btn-outline-primary ms-auto" onclick="changeTheme()">
+        <i id="theme-icon" class="bi bi-brightness-low-fill" style="font-size: 1.5rem"></i>
+      </button>
+    </div>
+  </nav>
+
+  <div class="container d-flex justify-content-center align-items-center">
+    <div class="d-flex flex-column flex-md-row align-items-center w-100 justify-content-center gap-5 text-md-start text-center">
+      <img src="public/undraw_programmer_raqr.svg" class="img-fluid mb-3 mb-md-0" alt="Imagem Intro" style="max-width: 250px;" />
+      <div style="max-width: 600px;">
+        <p style="font-weight: 700;" class="h1 py-2">Olá, eu sou a Jenifer</p>
+        <p style="text-align: justify;">
+          Uma <strong style="color: #24c361;">Desenvolvedora Backend</strong>, mas você provavelmente já percebeu isso só de olhar para esse layout :)
+          Brincadeiras à parte, meu trabalho é garantir que tudo funcione bem nos bastidores, mesmo que nem sempre apareça.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div style="font-weight: 700;" class="h3 mb-3">
+      <bold>Conjunto de Tecnologias</bold>
+    </div>
+    <hr style="border: 3px solid #da4a2bff; width: 3%; margin-bottom: 3;">
+    <p style="text-align: justify;">Meu objetivo é utilizar a tecnologia para gerar um impacto positivo na vida das
+      pessoas. Nos últimos 4 anos, tenho me dedicado a essa missão como desenvolvedora de software, contribuindo para
+      iniciativas de transformação digital e automação de processos e tarefas. Como parte desse processo, utilizo
+      principalmente as tecnologias abaixo, mas também tenho interesse em explorar outras linguagens e ferramentas.</p>
+    <div class="badge-container mb-4">
+      <span class="badge bg-secondary badge-custom">Python</span>
+      <span class="badge bg-secondary badge-custom">JavaScript</span>
+      <span class="badge bg-secondary badge-custom">AWS</span>
+      <span class="badge bg-secondary badge-custom">Git</span>
+      <span class="badge bg-secondary badge-custom">GitHub</span>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div style="font-weight: 700;" class="h3 mb-3"><bold>Projetos</bold></div>
+    <hr style="border: 3px solid #da4a2bff; width: 3%; margin-bottom: 3;">
+    <p style="text-align: justify;">Veja alguns dos projetos que desenvolvi ao longo dos anos, seja para testar novas ideias ou para aprofundar meus conhecimentos.</p>
+    
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <a href="https://github.com/jeniferss/PoCAuth" class="card" style="text-decoration: none;">
+          <img src="images/keycloak.jpg" class="card-img-top" alt="Imagem do Projeto 0">
+          <div class="card-body">
+            <h5 class="card-title">PoC: Ambiente de Autenticação</h5>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <a href="https://github.com/jeniferss/DataEngineeringStudies/tree/feat/atividade02" class="card" style="text-decoration: none;">
+          <img src="images/spotifyRecommend.png" class="card-img-top" alt="Imagem do Projeto 1">
+          <div class="card-body">
+            <h5 class="card-title">Recomendar Músicas do Spotify</h5>
+          </div>
+        </a>
+      </div>
+      
+      <div class="col-md-4 mb-4">
+        <a href="https://github.com/jeniferss/DataEngineeringStudies/tree/feat/atividade07" class="card" style="text-decoration: none;">
+          <img src="images/sparkS3.png" class="card-img-top" alt="Imagem do Projeto 2">
+          <div class="card-body">
+            <h5 class="card-title">Arquitetura Medalhão com AWS S3</h5>
+          </div>
+        </a>
+      </div>
+  
+      <div class="col-md-4 mb-4">
+        <a href="https://github.com/jeniferss/DataEngineeringStudies/tree/feat/atividade01" class="card" style="text-decoration: none;">
+          <img src="images/leitorJSON.png" class="card-img-top" alt="Imagem do Projeto 3">
+          <div class="card-body">
+            <h5 class="card-title">Leitor de Arquivos JSON</h5>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <a href="https://github.com/jeniferss/LinketinderProject" class="card" style="text-decoration: none;">
+          <img src="images/linketinder.png" class="card-img-top" alt="Imagem do Projeto 4">
+          <div class="card-body">
+            <h5 class="card-title">Linketinder</h5>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <a href="https://github.com/jeniferss/ScientificEventsTimeline" class="card" style="text-decoration: none;">
+          <img src="images/timeline.png" class="card-img-top" alt="Imagem do Projeto 5">
+          <div class="card-body">
+            <h5 class="card-title">Linha do Tempo</h5>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+
+  <script>
+    function changeTheme() {
+      const darkColor = "#1c1c1c";
+      const lightColor = "#e9e9e7";
+
+      const icon = document.getElementById("theme-icon");
+      if (icon.classList.contains("bi-brightness-low-fill")) {
+        document.body.style.backgroundColor = lightColor;
+        document.body.style.color = darkColor;
+        document.getElementById("navbar").style.backgroundColor = lightColor;
+
+        icon.classList.remove("bi-brightness-low-fill");
+        icon.classList.add("bi-moon-stars-fill");
+      } else {
+        document.body.style.backgroundColor = darkColor;
+        document.body.style.color = lightColor;
+        document.getElementById("navbar").style.backgroundColor = darkColor;
+
+        icon.classList.remove("bi-moon-stars-fill");
+        icon.classList.add("bi-brightness-low-fill");
+      }
+    }
+  </script>
+</body>
+
+</html>
